@@ -1,7 +1,7 @@
 library(ranger)
 library(jsonlite)
 
-fit <- read_rds("fit.rds")
+fit <- readRDS("fit.rds")
 
 #* @apiTitle Diamond price prediction
 #* @apiDescription This API takes as input the weight of a 
