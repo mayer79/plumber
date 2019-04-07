@@ -1,13 +1,13 @@
 library(ranger)
 library(jsonlite)
 
-fit <- read_rds("fit.rds")
+fit <- readRDS("fit.rds")
 
 #* @apiTitle Diamond price prediction
 #* @apiDescription This API takes as input the weight of a 
 #*   diamond in carat and returns its predicted price.
 
-#* @param carat:numeric weight of diamond in carat
+#* @param carat:numeric Weight of diamond in carat
 #* @get /predict
 #* @serializer unboxedJSON
 #* @response 200 Returns the predicted price
